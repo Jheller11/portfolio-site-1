@@ -49,6 +49,7 @@ ul {
 li {
   display: inline-block;
   padding: 5px;
+  color: gray;
 }
 
 a {
@@ -62,4 +63,8 @@ a {
 
 .project > h3 {
   color: black;
+}
+
+#about > p {
+  color: gray;
 }
