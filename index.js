@@ -11,18 +11,21 @@ class Element {
   activate() {
     anime({
       targets: ['#' + this.name],
-      translateX: 300,
+      translateX: 200,
       duration: 1000,
-      opacity: 1
+      opacity: 1,
+      delay: 250,
+      zIndex: 1
     })
   }
 
   deactivate() {
     anime({
       targets: ['#' + this.name],
-      translateX: -300,
+      translateX: -500,
       duration: 1000,
-      opacity: 0
+      opacity: 0,
+      zIndex: 0
     })
   }
 }
@@ -44,4 +47,8 @@ buttons.forEach(button => {
     active = target
     target.activate()
   })
+})
+
+elements.forEach(element => {
+  element.deactivate()
 })

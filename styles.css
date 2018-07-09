@@ -2,6 +2,11 @@ body {
   font-family: sans-serif;
 }
 
+h1 {
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
 nav > * {
   font-family: 'Audiowide', cursive;
   border: 1px solid white;
@@ -14,15 +19,47 @@ button:hover {
 }
 
 nav {
-  width: 50%;
   display: flex;
   justify-content: space-around;
-  margin: 5px;
+  margin: 5px auto;
 }
 
 .section {
   opacity: 0;
-  background: lightblue;
+  margin-top: 20px;
   position: absolute;
   width: 60%;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact > * {
+  margin: 10px 0;
+  font-size: 20px;
+  color: grey;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.project {
+  color: gray;
+  padding: 20px;
+}
+
+.project > h3 {
+  color: black;
 }
