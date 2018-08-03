@@ -6,49 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jeffrey Heller</title>
-    <link href='styles.css' type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
 </head>
 
 <body>
-    <header>
-        <h1 class='header'>Jeffrey Heller</h1>
-        <nav>
-            <button name='about'>about</button>
-            <button name="projects">projects</button>
-            <button name='contact'>contact</button>
-        </nav>
-    </header>
+    <div class="pure-menu pure-menu-horizontal">
+        <a href="#" class="pure-menu-heading pure-menu-link">Jeffrey Heller</a>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item">
+                <a href='#' class="pure-menu-link">About</a>
+            </li>
+            <li class="pure-menu-item">
+                <a href='#' class="pure-menu-link">Projects</a>
+            </li>
+            <li class="pure-menu-item">
+                <a href='#' class="pure-menu-link">Contact</a>
+            </li>
+        </ul>
+    </div>
     <main>
-        <div id='contact' class='section'>
-            <a href='mailto:heller.jeffrey@gmail.com' target="_blank">
-                heller.jeffrey@gmail.com
-            </a>
-            <a href='https://github.com/Jheller11' target="_blank">
-                Github
-            </a>
-            <a href='https://www.linkedin.com/in/jeffreyaheller/' target="_blank">
-                LinkedIn
-            </a>
+        <div class='pure-g'>
+            <div class='pure-u-1-2'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore cum nemo laudantium corrupti ipsam aliquam?
+                Eaque sint recusandae, sunt odio blanditiis, aliquid ipsa dolorem molestiae porro sit quo assumenda itaque.</div>
         </div>
-        <div id='projects' class='section'>
-            <div class='project'>
-                <h3>RentCheck</h3>
-                <p> A tool for renters and landlords to estimate fair market value for an apartment based on a variety of factors
-                    including size, number of bedrooms, location, etc.
+
+        <div class='pure-g'>
+            <div class='pure-u-1 pure-u-md-1-2'>
+                <div class="l-box ">
+                    <h3>RentCheck</h3>
+                    <p> A tool for renters and landlords to estimate fair market value for an apartment based on a variety of
+                        factors including size, number of bedrooms, location, etc.
+                    </p>
+                    <ul>
+                        <li>React</li>
+                        <li>Node</li>
+                        <li>MongoDB</li>
+                        <li>Express</li>
+                    </ul>
+                    <img>
+                    <a target="_blank " href='https://rentcheck-dc.surge.sh/'>View</a>
+                </div>
+            </div>
+            <div class='pure-u-1 pure-u-md-1-2'>
+                <h3>NASA API Search</h3>
+                <p> This application allows you to search through NASA's image database (
+                    <a href='https://api.nasa.gov/api.html#Images' target='_blank'>https://api.nasa.gov/api.html#Images</a>) and view relevant results.
                 </p>
                 <ul>
                     <li>React</li>
-                    <li>Node</li>
-                    <li>MongoDB</li>
-                    <li>Express</li>
                 </ul>
                 <img>
-                <a target="_blank" href='https://rentcheck-dc.surge.sh/'>View</a>
+                <a target="_blank " href='http://nasa-image-search.surge.sh/'>View</a>
 
             </div>
-            <div class=' project '>
+            <div class=' pure-u-1 pure-u-md-1-2'>
                 <h3>Liverpool Links</h3>
                 <p>A forum for posting links to news and videos related to Liverpool Football Club</p>
                 <ul>
@@ -58,10 +71,10 @@
                     <li>Handlebars</li>
                 </ul>
                 <img>
-                <a target="_blank" href='https://liverpoollinks.herokuapp.com/'>View</a>
+                <a target="_blank " href='https://liverpoollinks.herokuapp.com/'>View</a>
 
             </div>
-            <div class='project '>
+            <div class='pure-u-1 pure-u-md-1-2'>
                 <h3>Pyramids</h3>
                 <p>A game based on the class Towers of Hanoi, players move pieces of the pyramid to relocate the pyramid from
                     one side of the game to the other</p>
@@ -71,10 +84,10 @@
                     <li>CSS</li>
                 </ul>
                 <img>
-                <a target="_blank" href='https://jheller11.github.io/pyramids/'>View</a>
+                <a target="_blank " href='https://jheller11.github.io/pyramids/'>View</a>
 
             </div>
-            <div class='project '>
+            <div class='pure-u-1 pure-u-md-1-2'>
                 <h3>Global Cup</h3>
                 <p>An application for registering and tracking teams in a youth or recreational sports league</p>
                 <ul>
@@ -84,43 +97,28 @@
                     <li>Express</li>
                 </ul>
                 <img>
-                <a target="_blank" href='https://globalcup.surge.sh/'>View</a>
+                <a target="_blank " href='https://globalcup.surge.sh/'>View</a>
 
             </div>
         </div>
-        <div id='about' class='section'>
-            <p>Welcome to my page. I am a web developer with a passion for coding and building easy to use pages and applications.
-                To see some of the applications I've created, please take a look at my projects.
-            </p>
-            <p>Interested in getting in touch? I am available by email at:
-                <a href='mailto:heller.jeffrey@gmail.com' target="_blank">
-                    heller.jeffrey@gmail.com
-                </a>.
-            </p>
-            <h3>Skills</h3>
-            <ul>
-                <li>JavaScript</li>
-                <li>Node</li>
-                <li>React</li>
-                <li>PostgresSQL</li>
-                <li>ReactNative</li>
-                <li>CSS</li>
-                <li>MongoDB</li>
-                <li>Ruby</li>
-                <li>Rails</li>
-                <li>HTML</li>
-                <li>Express</li>
-                <li>Gatsby</li>
-                <li>Git</li>
-                <li>Github</li>
-            </ul>
+        <div class='pure-g'>
+            <a href='mailto:heller.jeffrey@gmail.com' target=" _blank ">
+                heller.jeffrey@gmail.com
+            </a>
+            <a href='https://github.com/Jheller11' target="_blank ">
+                Github
+            </a>
+            <a href='https://www.linkedin.com/in/jeffreyaheller/' target="_blank ">
+                LinkedIn
+            </a>
         </div>
+
     </main>
     <footer></footer>
 
 
-    <script src="anime.min.js"></script>
-    <script src='script.js'></script>
+    <!-- <script src="anime.min.js "></script>
+    <script src='script.js'></script> -->
 
 </body>
 
