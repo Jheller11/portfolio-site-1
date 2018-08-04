@@ -1,0 +1,21 @@
+.header {
+  position: fixed;
+  margin-bottom: 2em;
+  background: white;
+  border-bottom: 1px solid rgb(69, 99, 165);
+}
+
+main {
+  padding-top: 4em;
+}
+
+.secondary {
+  font-size: 60%;
+}
+
+.box {
+  background: rgb(228, 228, 228);
+  border: 1px solid rgb(69, 99, 165);
+  padding: 1em;
+  margin: 1em;
+}
