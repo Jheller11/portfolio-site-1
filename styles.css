@@ -13,8 +13,16 @@
   justify-content: center;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  margin-bottom: 1em;
+}
 main {
-  padding-top: 4em;
+  padding-top: 1em;
 }
 
 .secondary {
@@ -29,7 +37,7 @@ main {
 }
 
 .spacer {
-  min-height: 100px;
+  min-height: 2em;
   width: 100%;
 }
 
