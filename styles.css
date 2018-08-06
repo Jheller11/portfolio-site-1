@@ -32,10 +32,12 @@
   border-radius: 50%;
   height: 100px;
 }
+
 h3,
 h4 {
   color: #777;
   border-bottom: 1px solid rgb(69, 99, 165);
+  margin-top: 3em;
 }
 
 table {
@@ -56,10 +58,10 @@ main {
 }
 
 .spacer {
-  min-height: 2em;
+  min-height: 1em;
   width: 50%;
-  border-top: 1px solid rgb(74, 66, 56);
-  margin: 0 auto;
+  border-bottom: 1px solid rgb(74, 66, 56);
+  margin: 3em auto;
 }
 
 body {
