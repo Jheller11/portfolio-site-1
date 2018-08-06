@@ -57,18 +57,19 @@ main {
 
 .spacer {
   min-height: 2em;
-  width: 100%;
+  width: 50%;
+  border-top: 1px solid rgb(74, 66, 56);
+  margin: 0 auto;
 }
 
-/* .box > ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+body {
+  color: rgb(29, 52, 97);
 }
 
-.box > ul > li {
-  border: 1px solid rgb(69, 99, 165);
-  background: white;
-  padding: 0.5em;
-} */
+/* colors (rgb)
+light blue = 69, 99, 165
+dark blue =  29, 52, 97
+taupe = 74, 66, 56
+gray = 77, 83, 89
+green = 79, 90, 91
+*/
