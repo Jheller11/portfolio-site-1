@@ -1,3 +1,23 @@
-#me {
+.char > * {
   height: 100px;
+}
+
+.char {
+  width: 200px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.bubble {
+  background: #3e6ea580;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#window {
+  width: 80%;
+  margin: 100px auto 20px auto;
+  border: 1px solid green;
+  height: 400px;
 }
