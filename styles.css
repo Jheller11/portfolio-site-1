@@ -1,12 +1,19 @@
 .header {
   position: fixed;
   margin-bottom: 2em;
-  background: white;
+  background: rgb(246, 246, 255);
   border-bottom: 1px solid rgb(69, 99, 165);
 }
 
+.contact-menu > * {
+  background: rgb(246, 246, 255);
+}
+.contact-menu {
+  border: 1px solid rgb(69, 99, 165);
+}
+
 .footer {
-  background: white;
+  background: rgb(246, 246, 255);
   border-top: 1px solid rgb(69, 99, 165);
   display: flex;
   justify-content: center;
@@ -43,7 +50,6 @@ table {
 }
 
 .box {
-  /* background: rgb(245, 245, 245); */
   padding: 1em;
   margin: 1em;
 }
