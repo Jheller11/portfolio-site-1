@@ -39,13 +39,38 @@ class Slider {
       sections.push(newSection)
     })
     this.sections = sections
+    this.addListeners()
   }
 
   setActiveLink() {
+    this.links.forEach(link => {
+      link.setAttribute('style', '')
+    })
     this.links[this.activeSlide].setAttribute(
       'style',
       'transform: scale(1.1); color: rgb(29, 52, 97)'
     )
+  }
+
+  addListeners() {
+    window.addEventListener('scroll', () => {
+      this.activeSlide = this.getActiveSlide()
+      this.setActiveLink()
+    })
+  }
+
+  getActiveSlide() {
+    let tops = this.sections.map(slide => {
+      return slide.top
+    })
+    let scrollPosition = window.scrollY
+    let arr = []
+    tops.forEach((top, i) => {
+      if (scrollPosition >= top - 40) {
+        arr.push(i)
+      }
+    })
+    return arr[arr.length - 1]
   }
 }
 
