@@ -1,10 +1,13 @@
+//each section of html
 const views = document.querySelectorAll('.view')
+// each link in header
 const links = document.querySelectorAll('.header-link')
+// button to move up one section
 const up = document.querySelector('.up')
+// button to move down one section
 const down = document.querySelector('.down')
 
-console.log(up, down)
-
+// each section of html will be an instance of this class
 class Slide {
   constructor(element) {
     this.element = element.id
@@ -19,6 +22,7 @@ class Slide {
   }
 }
 
+// controller for buttons, slides, monitoring active section, initiating scroll etc.
 class Slider {
   constructor(array, links, up, down, sections = [], activeSlide = 0) {
     this.array = array
@@ -38,6 +42,7 @@ class Slider {
     up.setAttribute('style', 'opacity: 0')
     this.sections = sections
     this.addListeners()
+    this.setActiveLink()
   }
 
   setActiveLink() {
@@ -55,12 +60,12 @@ class Slider {
       this.activeSlide = this.getActiveSlide()
       this.setActiveLink()
       if (this.activeSlide === 0) {
-        up.setAttribute('style', 'opacity: 0')
+        this.up.setAttribute('style', 'opacity: 0')
       } else if (this.activeSlide === this.sections.length - 1) {
-        down.setAttribute('style', 'opacity: 0')
+        this.down.setAttribute('style', 'opacity: 0')
       } else {
-        up.setAttribute('style', 'opacity: 1')
-        down.setAttribute('style', 'opacity: 1')
+        this.up.setAttribute('style', 'opacity: 1')
+        this.down.setAttribute('style', 'opacity: 1')
       }
     })
     this.up.addEventListener('click', () => {
@@ -93,6 +98,4 @@ class Slider {
 }
 
 const portfolioSlider = new Slider(views, links, up, down)
-
 portfolioSlider.initialize()
-portfolioSlider.setActiveLink()
