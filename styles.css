@@ -72,22 +72,20 @@ body {
 }
 
 .divider {
-  height: 30px;
+  height: 40px;
   background-color: rgb(79, 90, 91);
 }
 
 .up-arrow {
   position: fixed;
   top: 3em;
-  width: 100%;
-  text-align: center;
+  right: 2em;
 }
 
 .down-arrow {
   position: fixed;
   bottom: 3em;
-  width: 100%;
-  text-align: center;
+  right: 2em;
 }
 
 .arrow > button {
