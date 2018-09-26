@@ -99,6 +99,31 @@ body {
   border: 1px rgb(29, 52, 97) solid;
 }
 
+.contact-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.contact-item > a > i {
+  color: rgb(29, 52, 97);
+}
+
+.contact-item > a > i:hover {
+  animation: contact 1s;
+  color: rgb(69, 99, 165);
+}
+
+@keyframes contact {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    color: rgb(69, 99, 165);
+  }
+}
+
 /* colors (rgb)
 light blue = 69, 99, 165
 dark blue =  29, 52, 97
