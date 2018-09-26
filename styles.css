@@ -3,6 +3,7 @@
   margin-bottom: 2em;
   background: rgb(246, 246, 255);
   border-bottom: 1px solid rgb(69, 99, 165);
+  font-family: 'Fjalla One', sans-serif;
 }
 .space {
   margin-top: 2em;
@@ -138,4 +139,8 @@ dark blue =  29, 52, 97
 taupe = 74, 66, 56
 gray = 77, 83, 89
 green = 79, 90, 91
+
+fonts (google)
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Abel', sans-serif;
 */
