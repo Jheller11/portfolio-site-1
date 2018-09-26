@@ -108,7 +108,7 @@ body {
 }
 
 .contact-item > a > i:hover {
-  animation: contact 1s;
+  animation: contact 1s ease-in-out;
   color: rgb(69, 99, 165);
 }
 
@@ -119,6 +119,16 @@ body {
   to {
     transform: rotate(360deg);
     color: rgb(69, 99, 165);
+  }
+}
+
+@keyframes bounce {
+  from,
+  to {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
 

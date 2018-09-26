@@ -40,6 +40,7 @@ class Slider {
       sections.push(newSection)
     })
     up.setAttribute('style', 'opacity: 0')
+    down.setAttribute('style', 'animation: bounce 1s ease-in-out infinite')
     this.sections = sections
     this.addListeners()
     this.setActiveLink()
