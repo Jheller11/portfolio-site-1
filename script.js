@@ -1,5 +1,9 @@
 const views = document.querySelectorAll('.view')
 const links = document.querySelectorAll('.header-link')
+const up = document.querySelector('.up')
+const down = document.querySelector('.down')
+
+console.log(up, down)
 
 class Slide {
   constructor(element) {
@@ -16,14 +20,7 @@ class Slide {
 }
 
 class Slider {
-  constructor(
-    array,
-    links,
-    up = undefined,
-    down = undefined,
-    sections = [],
-    activeSlide = 0
-  ) {
+  constructor(array, links, up, down, sections = [], activeSlide = 0) {
     this.array = array
     this.links = links
     this.up = up
@@ -38,6 +35,7 @@ class Slider {
       let newSection = new Slide(element)
       sections.push(newSection)
     })
+    up.setAttribute('style', 'opacity: 0')
     this.sections = sections
     this.addListeners()
   }
@@ -56,6 +54,26 @@ class Slider {
     window.addEventListener('scroll', () => {
       this.activeSlide = this.getActiveSlide()
       this.setActiveLink()
+      if (this.activeSlide === 0) {
+        up.setAttribute('style', 'opacity: 0')
+      } else if (this.activeSlide === this.sections.length - 1) {
+        down.setAttribute('style', 'opacity: 0')
+      } else {
+        up.setAttribute('style', 'opacity: 1')
+        down.setAttribute('style', 'opacity: 1')
+      }
+    })
+    this.up.addEventListener('click', () => {
+      if (this.activeSlide > 0) {
+        this.activeSlide -= 1
+        this.sections[this.activeSlide].smoothScroll()
+      }
+    })
+    this.down.addEventListener('click', () => {
+      if (this.activeSlide < this.sections.length - 1) {
+        this.activeSlide += 1
+        this.sections[this.activeSlide].smoothScroll()
+      }
     })
   }
 
@@ -74,7 +92,7 @@ class Slider {
   }
 }
 
-const portfolioSlider = new Slider(views, links)
+const portfolioSlider = new Slider(views, links, up, down)
 
 portfolioSlider.initialize()
 portfolioSlider.setActiveLink()

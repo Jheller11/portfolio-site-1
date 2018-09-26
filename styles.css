@@ -4,7 +4,9 @@
   background: rgb(246, 246, 255);
   border-bottom: 1px solid rgb(69, 99, 165);
 }
-
+.space {
+  margin-top: 2em;
+}
 #title {
   color: rgb(29, 52, 97);
 }
@@ -73,6 +75,30 @@ body {
   height: 30px;
   background-color: rgb(79, 90, 91);
 }
+
+.up-arrow {
+  position: fixed;
+  top: 3em;
+  width: 100%;
+  text-align: center;
+}
+
+.down-arrow {
+  position: fixed;
+  bottom: 3em;
+  width: 100%;
+  text-align: center;
+}
+
+.arrow > button {
+  border: 1px transparent;
+  background-color: transparent;
+}
+
+.arrow > button:hover {
+  border: 1px rgb(29, 52, 97) solid;
+}
+
 /* colors (rgb)
 light blue = 69, 99, 165
 dark blue =  29, 52, 97
