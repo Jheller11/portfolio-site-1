@@ -11,7 +11,10 @@
 #title {
   color: rgb(29, 52, 97);
 }
-
+.resume {
+  text-align: center;
+  margin-top: 5em;
+}
 .contact-menu > * {
   background: rgb(246, 246, 255);
 }
@@ -102,13 +105,14 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  padding-inline-start: 0px;
 }
 
 .contact-item > a > i {
   color: rgb(29, 52, 97);
 }
 
-.contact-item > a > i:hover {
+.contact-item > a > *:hover {
   animation: contact 1s ease-in-out;
   color: rgb(69, 99, 165);
 }
