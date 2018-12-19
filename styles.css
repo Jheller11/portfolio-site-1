@@ -102,29 +102,19 @@ body {
 }
 
 .contact-list {
-  display: flex;
-  justify-content: space-between;
   list-style: none;
-  padding-inline-start: 0px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contact-item > a {
+  text-decoration: none;
 }
 
 .contact-item > a > i {
   color: rgb(29, 52, 97);
-}
-
-.contact-item > a > *:hover {
-  animation: contact 1s ease-in-out;
-  color: rgb(69, 99, 165);
-}
-
-@keyframes contact {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-    color: rgb(69, 99, 165);
-  }
 }
 
 @keyframes bounce {
