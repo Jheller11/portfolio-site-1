@@ -32,7 +32,7 @@ class Slider {
     this.sections = sections
     this.activeSlide = activeSlide
   }
-
+  // create functionality based on page layout
   initialize() {
     let sections = []
     this.array.forEach(element => {
@@ -45,7 +45,7 @@ class Slider {
     this.addListeners()
     this.setActiveLink()
   }
-
+  // update nav bar to reflect active section link
   setActiveLink() {
     this.links.forEach(link => {
       link.setAttribute('style', '')
@@ -82,7 +82,7 @@ class Slider {
       }
     })
   }
-
+  // find active section based on screen scroll position
   getActiveSlide() {
     let tops = this.sections.map(slide => {
       return slide.top
@@ -98,5 +98,6 @@ class Slider {
   }
 }
 
+// initialize the slider
 const portfolioSlider = new Slider(views, links, up, down)
 portfolioSlider.initialize()
