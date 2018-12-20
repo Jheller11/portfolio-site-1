@@ -1,3 +1,7 @@
+body {
+  color: rgb(29, 52, 97);
+}
+
 .header {
   position: fixed;
   margin-bottom: 2em;
@@ -11,10 +15,7 @@
 #title {
   color: rgb(29, 52, 97);
 }
-.resume {
-  text-align: center;
-  margin-top: 5em;
-}
+
 .contact-menu > * {
   background: rgb(246, 246, 255);
 }
@@ -62,10 +63,6 @@ table {
 .box {
   padding: 1em;
   margin: 1em;
-}
-
-body {
-  color: rgb(29, 52, 97);
 }
 
 .view {
@@ -125,6 +122,20 @@ body {
   50% {
     transform: translateY(-10px);
   }
+}
+
+.skill-list {
+  list-style: none;
+  text-align: center;
+  margin: 1em 0;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+}
+
+.skill-list > i {
+  color: rgb(200, 0, 0);
 }
 
 /* colors (rgb)

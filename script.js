@@ -1,4 +1,4 @@
-//each section of html
+// each section of html
 const views = document.querySelectorAll('.view')
 // each link in header
 const links = document.querySelectorAll('.header-link')
@@ -52,7 +52,7 @@ class Slider {
     })
     this.links[this.activeSlide].setAttribute(
       'style',
-      'transform: scale(1.1); color: rgb(29, 52, 97)'
+      'transform: scale(1.1); color: rgb(29, 52, 97);'
     )
   }
 
