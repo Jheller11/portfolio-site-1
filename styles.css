@@ -128,6 +128,11 @@ table {
   color: rgb(200, 0, 0);
 }
 
+#about {
+  background-image: url('images/nyc-map.png');
+  background-size: cover;
+}
+
 /* colors (rgb)
 light blue = 69, 99, 165
 dark blue =  29, 52, 97
