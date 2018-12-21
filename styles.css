@@ -9,6 +9,7 @@ body {
   border-bottom: 1px solid rgb(69, 99, 165);
   font-family: 'Fjalla One', sans-serif;
 }
+
 .space {
   margin-top: 2em;
 }
@@ -65,18 +66,21 @@ table {
 .divider {
   height: 40px;
   background-color: rgb(79, 90, 91);
+  z-index: 5;
 }
 
 .up-arrow {
   position: fixed;
   top: 3em;
   right: 2em;
+  color: rgb(200, 0, 0);
 }
 
 .down-arrow {
   position: fixed;
   bottom: 3em;
   right: 2em;
+  color: rgb(200, 0, 0);
 }
 
 .arrow > button {
@@ -103,14 +107,16 @@ table {
 
 .contact-item > a {
   text-decoration: none;
+  color: rgb(29, 52, 97);
 }
 
 .contact-item > a > i {
   color: rgb(29, 52, 97);
 }
 
-.contact-item:hover {
-  border-bottom: 1px solid rgb(200, 0, 0);
+.contact-item > a:hover,
+.contact-item > a > i:hover {
+  color: rgb(200, 0, 0);
 }
 
 @keyframes bounce {
@@ -154,3 +160,69 @@ fonts (google)
 font-family: 'Fjalla One', sans-serif;
 font-family: 'Abel', sans-serif;
 */
+
+.shooting-star {
+  top: 10px;
+  left: 10px;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  animation: shoot 2s ease-in;
+  animation-delay: 10s;
+}
+
+@keyframes shoot {
+  from {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.01;
+    top: 800px;
+    left: 1000px;
+  }
+}
+
+#about {
+  background-color: rgb(15, 15, 15);
+  color: whitesmoke;
+}
+
+#about-link {
+  color: whitesmoke;
+}
+
+.about-text {
+  padding: 1em;
+  text-align: right;
+}
+
+h1 {
+  font-size: 200%;
+}
+/* Stars Animation Layer */
+.star-container {
+  height: inherit;
+  z-index: auto;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
