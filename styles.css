@@ -4,7 +4,7 @@ body {
 
 .header {
   position: fixed;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   background: rgb(246, 246, 255);
   border-bottom: 1px solid rgb(69, 99, 165);
   font-family: 'Fjalla One', sans-serif;
@@ -94,6 +94,11 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  width: 300px;
+}
+
+.contact-item {
+  border-bottom: 1px solid transparent;
 }
 
 .contact-item > a {
@@ -102,6 +107,10 @@ table {
 
 .contact-item > a > i {
   color: rgb(29, 52, 97);
+}
+
+.contact-item:hover {
+  border-bottom: 1px solid rgb(200, 0, 0);
 }
 
 @keyframes bounce {
@@ -128,8 +137,9 @@ table {
   color: rgb(200, 0, 0);
 }
 
-#about {
-  background-image: url('images/nyc-map.png');
+#contact {
+  background: linear-gradient(to right, lightgrey, transparent),
+    url('images/nyc-map.png') center no-repeat;
   background-size: cover;
 }
 
